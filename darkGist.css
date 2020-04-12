@@ -1,6 +1,6 @@
 .full-dark-gist .gist .gist-file, .semi-dark-gist .gist .gist-file {
-  background-color: black;
-  border-color: black;
+  background-color: white;
+  border-color: white;
 }
 
 .full-dark-gist .gist .gist-file .gist-data, .semi-dark-gist .gist .gist-file .gist-data {
@@ -93,16 +93,21 @@
   color: #dadada;
 }
 
-.full-dark-gist .gist .gist-meta {
+.full-dark-gist .gist .gist-file {
+  background-color: black !important;
+  border-color: black !important;
+}
+
+.full-dark-gist .gist .gist-file .gist-meta {
   background-color: #151515;
 }
 
-.full-dark-gist .gist .gist-meta a {
+.full-dark-gist .gist .gist-file .gist-meta a {
   color: #afafaf;
   text-decoration: none;
   transition: 0.2s ease-in color;
 }
 
-.full-dark-gist .gist .gist-meta a:hover {
+.full-dark-gist .gist .gist-file .gist-meta a:hover {
   color: white;
 }

@@ -1,8 +1,8 @@
 .full-dark-gist, .semi-dark-gist{
   .gist{
     .gist-file{
-      background-color: black;
-      border-color: black;
+      background-color: white;
+      border-color: white;
       .gist-data{
         background-color: #1E1E1E;
         border-color: black; 
@@ -87,14 +87,18 @@
 .full-dark-gist {
   // Example
   .gist{
-    .gist-meta{
-      background-color: #151515;
-      a{
-        color: #afafaf;
-        text-decoration: none;
-        transition: 0.2s ease-in color;
-        &:hover{
-          color: white;
+    .gist-file{
+      background-color: black !important;
+      border-color: black !important;
+      .gist-meta{
+        background-color: #151515;
+        a{
+          color: #afafaf;
+          text-decoration: none;
+          transition: 0.2s ease-in color;
+          &:hover{
+            color: white;
+          }
         }
       }
     }
