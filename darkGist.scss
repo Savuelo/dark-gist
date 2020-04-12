@@ -1,101 +1,114 @@
-.full-dark-gist, .semi-dark-gist{
-  .gist{
-    .gist-file{
-      background-color: white;
-      border-color: white;
-      .gist-data{
-        background-color: #1E1E1E;
-        border-color: black; 
-        .file{
-          .Box-body{ 
-            .highlight{
-              background-color:#1E1E1E;
-              .blob-num{
-                color: #b9b9b9ab;
-                border-right: 2px solid #b9b9b97e;
-              }
-            }
-          }
-          .pl-c{
-            color:#6a9955;
-          }
-          .type-html{
-            .blob-code{
-              color:#dadada;
-              .pl-smi{
-                color:#dadada;
-              }
-              .pl-ent{
-                color:#569cd6;
-              }
-              .pl-c1{
-                color:#9cdcfe;
-              }
-              .pl-kos{
-                color:#424242;
-              }
-              .pl-s{
-                color:#ce8349;
-              }
-            }
-          }
-          .type-javascript{
-            .blob-code{
-              color:#dadada;
-              .pl-k{
-                color:#2c7ad6;
-              }
-              .pl-en{
-                color:#dcdcaa;
-              }
-              .pl-s1{
-                color:#9cdcfe;
-              }
-              .pl-kos{
-                color:#dadada;
-              }
-              .pl-s{
-                color:#ce8349;
-              }
-              .pl-smi{
-                color:#4ec9b0;
-              }
-            }
-          }
-          .type-css{
-            .blob-code{
-              color:#dadada;
-              .pl-c1{
-                color: #9cdcfe;
-              }
-              .pl-pds{
-                color:#ce8349;
-              }
-              .pl-ent{
-                color: #569cd6;
-              }
-              .pl-smi{
-                color:#dadada;
-              }
-            }
-          }
-        }
+[class*='-dark-gist']{
+  .blob-code{
+    color:#dadada !important;
+  }
+  //TYPES
+  .type-html{
+    .pl-smi{
+      color:#dadada;
+    }
+    .pl-ent{
+      color:#569cd6;
+    }
+    .pl-c1{
+      color:#9cdcfe;
+    }
+    .pl-kos{
+      color:#424242;
+    }
+    .pl-s{
+      color:#ce8349;
+    }
+  } 
+  .type-javascript{
+    .pl-k{
+      color:#2c7ad6;
+    }
+    .pl-en{
+      color:#dcdcaa;
+    }
+    .pl-s1{
+      color:#9cdcfe;
+    }
+    .pl-kos{
+      color:#dadada;
+    }
+    .pl-s{
+      color:#ce8349;
+    }
+    .pl-smi{
+      color:#4ec9b0;
+    }
+  }
+  .type-css{
+    .pl-c1{
+      color: #9cdcfe;
+    }
+    .pl-pds, .pl-kos{
+      color:#ce8349;
+    }
+    .pl-ent{
+      color: #569cd6;
+    }
+    .pl-smi{
+      color:#dadada;
+    }
+  }
+  .type-scss{
+    .pl-e{
+      color:#ce8349;
+    }
+    .pl-c1, .pl-k{
+      color:#9cdcfe;
+    }
+    .pl-ent{
+
+      color:#2c7ad6;
+    }
+  }
+  //GLOBAL comment color for all types
+  .pl-c{
+    color:#6a9955 !important;
+  }
+  // BOX
+  .gist-file{
+    background-color: white;
+    border-color: white;
+  }
+  .gist-data{
+    background-color: #1E1E1E;
+    border-color: black; 
+  }
+  .gist-meta{
+    a{
+      color: #696969;
+      text-decoration: none;
+      transition: 0.2s ease-in color;
+      &:hover{
+        color: black;
+      }
+    }
+  }
+  .Box-body{ 
+    .highlight{
+      background-color:#1E1E1E;
+      .blob-num{
+        color: #b9b9b9ab;
+        border-right: 2px solid #b9b9b97e;
       }
     }
   }
 }
 .full-dark-gist {
-  // Example
   .gist{
     .gist-file{
       background-color: black !important;
       border-color: black !important;
       .gist-meta{
         background-color: #151515;
+        color: rgb(146, 146, 146);
         a{
-          color: #afafaf;
-          text-decoration: none;
-          transition: 0.2s ease-in color;
+          color: #c9c9c9;
           &:hover{
             color: white;
           }
