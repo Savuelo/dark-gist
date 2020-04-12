@@ -13,6 +13,8 @@ If you want use this styles on light background I would suggest you to add this 
 - HTML 
 - JS
 - CSS
+- SCSS
+- TXT
 
 # Example
 
